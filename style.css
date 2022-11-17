@@ -1,0 +1,355 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(overView.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.headerBack {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)),
+    url(https://wallpaperaccess.com/full/1428493.jpg);
+  height: 50vh;
+  background-position: 50% 30%;
+}
+.perWidth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 6%;
+}
+.logoImg {
+  width: 6rem;
+  border-radius: 60px;
+}
+nav ul {
+  flex: 1;
+  text-align: right;
+}
+ul a li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 10px;
+  color: #fff;
+}
+ul a li::after {
+  content: "";
+  background-color: #f44336;
+  height: 2px;
+  width: 0%;
+  display: block;
+  transition: 0.5s;
+}
+ul a li:hover::after {
+  width: 100%;
+  margin: auto;
+}
+.intro {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fontClr {
+  font-size: 33px;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 0;
+}
+.fontH1 {
+  font-size: 45px;
+}
+.forh3 {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px;
+}
+.forP {
+  font-size: 14px;
+  color: #fff;
+  line-height: 22px;
+  font-weight: 250;
+  padding: 10px;
+}
+.button {
+  padding: 35px 0;
+}
+.forButton {
+  background: #fff;
+  padding: 10px 25px;
+  border: 1px solid #f44336;
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+  border-radius: 3px;
+  transition: 0.5s;
+  cursor: pointer;
+  user-select: none;
+}
+.forButton:hover {
+  background-color: #f44336;
+  color: #fff;
+}
+.foricon {
+  font-size: 25px;
+  color: #fff;
+  display: none;
+}
+@media (max-width: 700px) {
+  .forUL {
+    background-color: #20506f;
+    width: 40%;
+    height: 100vh;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    padding: 20px 0px 30px 20px;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  ul a {
+    text-decoration: none;
+  }
+  ul a li {
+    display: block;
+    padding-bottom: 25px;
+    padding: 30px 0px 10px 30px;
+  }
+  .block {
+    display: block;
+  }
+  .foricon {
+    display: block;
+  }
+  .fontClr {
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .forP {
+    font-size: 11px;
+  }
+}
+
+/* -------------Courses------------------- */
+.whatAbout {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+}
+.coursess {
+  width: 80%;
+  margin: 50px auto;
+}
+.courseRow {
+  display: flex;
+  justify-content: space-between;
+}
+.courseColumn {
+  flex-basis: 30%;
+  text-align: center;
+}
+.flexImg {
+  width: 100%;
+  height: 50%;
+  border-radius: 2px;
+}
+.forPsec {
+  font-size: 9px;
+  color: gray;
+  line-height: 18px;
+  padding: 10px;
+  font-weight: 400;
+}
+@media (max-width: 700px) {
+  .courseRow {
+    flex-direction: column;
+  }
+  .fontH1 {
+    font-size: 40px;
+  }
+}
+/* ------for footer---------- */
+.footer {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+  background-color: black;
+  color: gray;
+}
+.footer h5 {
+  font-weight: 400;
+  color: red;
+}
+.forFt {
+  font-size: 12px;
+  line-height: 22px;
+  padding: 5px;
+  font-weight: 300;
+}
+.padding {
+  padding: 0 6px;
+  color: gray;
+}
+/* -----for about------ */
+.aboutz {
+  width: 90%;
+  margin: auto;
+  padding: 80px 0;
+}
+.aboutRow {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutColumn {
+  flex-basis: 48%;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.aboutimg {
+  width: 100%;
+}
+.formainh1 {
+  font-weight: initial;
+  font-size: 25px;
+}
+.forPToRead {
+  padding: 10px 0;
+  font-weight: initial;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: justify;
+}
+@media (max-width: 700px) {
+  .aboutRow {
+    flex-direction: column;
+  }
+  .fontH1 {
+    font-size: 26px;
+  }
+}
+/* -----for contact------ */
+.contactt {
+  width: 90%;
+  margin: auto;
+}
+.contactt iframe {
+  width: 100%;
+  padding: 70px 0;
+}
+.contactRow {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.contactColumn {
+  flex-basis: 40%;
+  margin-bottom: 40px;
+}
+.contactColumnTwo {
+  flex-basis: 50%;
+}
+.control {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.padd {
+  padding: 2px;
+  font-size: 16px;
+  color: green;
+}
+.span {
+  text-align: left;
+  margin-left: 12px;
+}
+.forh5 {
+  font-size: 13px;
+}
+.lastP {
+  font-size: 12px;
+  line-height: 28px;
+}
+.contactColumnTwo form {
+  padding: 25px;
+  border: 2px solid #f0f0f0;
+}
+form input,
+form textarea {
+  background: #f0f0f0;
+  outline: none;
+  border: none;
+  width: 93%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 2px;
+}
+.paddinngg {
+  padding: 7px 22px;
+  background: #f0f0f0;
+}
+.adimn {
+  font-size: 20px;
+  font-weight: 400;
+}
+.actControl {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 80px 0;
+}
+.actOne {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+.imgActContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+.imgAct {
+  width: 100%;
+  border-radius: 0.5em;
+}
+.aboutAct {
+  width: 80%;
+  margin: 2rem auto;
+}
+.aboutP {
+  margin-top: 1rem;
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  user-select: none;
+}
+@media (max-width: 700px) {
+  .contactRow {
+    flex-direction: column;
+  }
+  .actControl {
+    grid-template-columns: 1fr 1fr;
+  }
+  .logoImg {
+    width: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .actControl {
+    grid-template-columns: 1fr;
+  }
+  .logoImg {
+    width: 3rem;
+  }
+}

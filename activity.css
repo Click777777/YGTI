@@ -1,0 +1,189 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+.photo {
+  width: 100%;
+  margin: 100px auto;
+}
+.frame {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  border: 3px solid darkcyan;
+  background-color: #2b6777;
+  flex-direction: column;
+  align-items: center;
+}
+.photo h3 {
+  margin: 0;
+  padding: 30px 10px;
+  font-weight: initial;
+  font-size: 24px;
+}
+.controlImg {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 60px;
+}
+.imgCon {
+  flex-basis: 50%;
+}
+.img {
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid darkcyan;
+}
+.previous {
+  font-size: 38px;
+  opacity: 0.6;
+  padding-right: 12%;
+  display: none;
+}
+.next {
+  font-size: 38px;
+  opacity: 0.6;
+  padding-left: 12%;
+  display: none;
+}
+.imgDiv {
+  margin-bottom: 40px;
+}
+@media (max-width: 700px) {
+  .frame {
+    width: 80%;
+  }
+  .imgCon {
+    flex-basis: 60%;
+  }
+  .previous {
+    padding-right: 10%;
+  }
+  .next {
+    padding-left: 10%;
+  }
+  .photo h3 {
+    padding: 25px 13px;
+  }
+}
+/* for searching */
+.mrTop {
+  margin-top: 100px;
+}
+.main {
+  width: 80%;
+  margin: auto;
+}
+.bookmark {
+  width: 64%;
+  margin: auto;
+  text-align: center;
+  padding: 20px 0;
+  border: 1px solid #5bcdf6;
+  background-color: #2b6777;
+  border-radius: 4px;
+}
+.bookmark h3 {
+  margin: 15px;
+  padding: 10px;
+  font-weight: initial;
+  font-size: 25px;
+  margin-top: 0;
+}
+.searchBar {
+  width: 80%;
+  padding: 8px 16px;
+  outline-color: #5bcdf6;
+  border: 1px solid #2b6777;
+  background-color: #ffffff;
+  margin-bottom: 50px;
+}
+.control {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  padding: 5px 8px;
+}
+.itemAccept {
+  border: 1px solid yellow;
+  padding: 5px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+  color: #ffffff;
+  margin: 0 18px;
+}
+.move {
+  color: #ffffff;
+}
+.dele {
+  text-decoration: line-through;
+}
+@media (max-width: 700px) {
+  .searchBar {
+    margin-bottom: 25px;
+  }
+  .bookmark {
+    width: 100%;
+  }
+}
+/* for clock watch */
+.clock {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  
+}
+.clockChild {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 0px;
+  border: 1px solid #5bcdf6;
+  background-color: #2b6777;
+  padding-bottom: 100px;
+}
+.watch {
+  background-color: black;
+  width: 85%;
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  padding: 10px;
+  padding-top: 20px;
+  color: #01e701;
+}
+.forhour{
+  font-size: 60px;
+}
+.marginn {
+  margin: 0 4px;
+}
+.divThous{
+    font-size: 14px;
+    display: flex;
+    justify-content: right;
+    color: red;
+}
+.showOr{
+  display: none;
+}
+@media (max-width: 700px) {
+  .forhour {
+    font-size: 45px;
+  }
+  .clockChild{
+    width: 80%;
+  }
+  .divThous{
+    font-size: 10px;
+  }
+}
